@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  border-bottom: 1px solid #D7DDE9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1328px;
+  height: 60px;
+  position: relative;
+  top: 24px;
+  left: 56px;
+  padding: 0px 0px 24px 0px;
+  gap: 8px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+}
+.header .logo {
+  width: 150px;
+  height: 36px;
+}
+.header .texto1 {
+  font-family: Inter Tight;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.04px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #000000;
+}
+.header .texto2 {
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+@media (max-width: 320px) {
+  .header {
+    width: 272px;
+    height: 100px;
+    position: relative;
+    top: 24px;
+    left: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 0px 0px 24px 0px;
+    gap: 8px;
+    border-bottom: 1px solid #D7DDE9;
+  }
+  .header .texto1 {
+    font-size: 16px;
+  }
+  .header .texto2 {
+    color: rgba(0, 0, 0, 0.5411764706);
+  }
+}
+.boxTarefas {
+  width: 450px;
+  height: 446px;
+  position: relative;
+  top: 124px;
+  left: 495px;
+  margin-bottom: 130px;
+  padding: 32px 0px 0px 0px;
+  gap: 24px;
+  border-radius: 16px;
+  border: 1px solid #EAECF0;
+  opacity: 0px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
+  background: #FFFFFF;
+}
+@media (max-width: 320px) {
+  .boxTarefas {
+    width: 272px;
+    height: 428px;
+  }
+}
+
+.titleTarefa {
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5411764706);
+}
+
+.subTitleTarefa {
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.cardsTarefas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px dotted #D7DDE9;
+  border-radius: 4px;
+  width: 386px;
+  height: 56px;
+  padding: 16px 0px 0px 0px;
+  gap: 16px;
+  border-radius: 8px;
+  opacity: 1px;
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.cardsTarefas:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+}
+@media (max-width: 320px) {
+  .cardsTarefas {
+    width: 208px;
+  }
+}
+
+.buttonLista {
+  width: 450px;
+  height: 51px;
+  left: 20px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+  color: white;
+}
+
+@media (max-width: 320px) {
+  .buttonLista {
+    width: 272px;
+    height: 51px;
+    left: 0;
+    top: 0;
+    padding: 16px 24px 16px 24px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+}
+.buttonCancelarModal {
+  width: 185px;
+  height: 51px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #E7EEFB;
+  color: black;
+}
+
+.buttonAdicionarModal {
+  width: 185px;
+  height: 51px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+  color: white;
+}
+
+.buttonDeletarModal {
+  width: 185px;
+  height: 51px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+  color: white;
+}
+
+@media (max-width: 320px) {
+  .buttonAdicionarModal {
+    width: 272px;
+    height: 51px;
+    left: 0;
+    top: 0;
+    padding: 16px 24px 16px 24px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+  .buttonCancelarModal {
+    width: 272px;
+    height: 51px;
+    left: 0;
+    top: 0;
+    padding: 16px 24px 16px 24px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+  .buttonDeletarModal {
+    width: 272px;
+    height: 51px;
+    left: 0;
+    top: 0;
+    padding: 16px 24px 16px 24px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
